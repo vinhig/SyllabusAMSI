@@ -1,0 +1,130 @@
+\chapter{Modelling}
+
+\section{Un modèle}
+
+Un modèle est une représentation abstraite d'un système concret :
+
+\begin{itemize}
+  \item Une simplification de la réalité
+  \item Possédant un noyau commun
+  \item Utilisé pour une aide à la compréhension
+  \item S'appliquant à un contexte et un usage défini
+  \item Possèdant des caractéristiques pertinentes du système pour permettre un raisonnement sur celui-ci
+\end{itemize}
+
+La modélisation d'un système est donc la mise en place d'une alternative pour un système réel. Cette alternative permettrait d'aborder une réflexion intellectuelle basé sur un concept moins cher, plus sûr et plus simple que la réalité, mais pourtant complètement comparable et similaire. Pour un contexte donné, ce modèle représentera la réalité dans tous ses aspects \textit{pertinents} au système et permet donc de travailler à l'élaboration de ce système d'une manière plus simplifiée que la réalité elle-même.
+
+En d'autre terme, simplier le système en n'en gardant que l'essence (ses caractéristiques pertinentes) afin de concevoir une abstraction du système sur laquelle il est plus aisée de travailler. On peut prendre l'exemple d'une carte. Si on prend la place d'un stratège, il est plus aisé de disposer ses troupes en réfléchissant sur la carte de la région plutôt que de se déplacer dans le monde réel. Cette carte devra aborder les caractéristiques \textit{pertinentes} de la région tel que les dénivelés et les axes de communication tout en omettant les essences d'arbres des bois environnents.
+
+\section{Un Système d'Information}
+
+Une simple définition (en anglais) suffit à cerner le concept : \textit{Information systems are combinations of hardare, sofware and telecommunications networks that people buid and use to collect, create, and distribute useful data, typically in organization settings}.
+
+\section{Formalisme des modèles}
+
+Les Systèmes d'Information peuvent donc se retrouver modélisés à des fins de recherche, de développement ou d'amélioration. Cette modélisation doit donc prendre forme afin de pouvoir être transmise et partagée entre les différents acteurs. Ces formes sont au nombre de quatre :
+
+\begin{itemize}
+  \item Langage naturel
+  \item Notations spécifiques
+  \item Notations semi-formels
+  \item Notations formels
+\end{itemize}
+
+Ces différentes manières peuvent être jugées sur base de sept critères bien connus dans le monde des spécifications logicielles. L'une y répondra de manière sporadique, tandis que l'autre y échouera lamentablement. On appelle souvent ces critères \textit{Les 7 péchés capitaux}.
+
+\begin{enumerate}
+  \item \textbf{Ambiguité} : Plusieurs interprétations pour une même information.
+  \item \textbf{Bruit} : Présence d'éléments non-pertinents.
+  \item \textbf{Silence/Sous-spécification} : Absence d'information pour un élément pertinent.
+  \item \textbf{Sur-spécification} : Présence d'information enfreignant l'abstraction ou décrivant la solution et non le problème.
+  \item \textbf{Contradiction} : Deux informations pour un même élément sont incompatibles.
+  \item \textbf{Référence anticipée} : Apport d'information avant l'énoncé d'un élément.
+  \item \textbf{Remords} : Apport d'information bien après l'énoncé d'un élément.
+\end{enumerate}
+
+\subsection{Langage naturel}
+
+Un moyen de mettre en forme un Système d'Information de manière relativement simple. Il suffit de le décrire en français. Si l'utilisateur utilise sa langue natale, il n'y a même plus besoin d'apprendre. Comme défini précédemment, c'est dans cette manière de formalisé les modèles que les 7 péchés sont le plus sollicités.
+
+\subsection{Notations spécifiques}
+
+Tout comme le langage naturel, il n'est pas nécessaire d'apprendre des normes ou des méthodes. Si un contexte veut être exprimé, il sera dessiné ou représenté d'une manière très intuitive et directement lié au contexte. Bien sûr, il est évident que le manque de formalisme se traduit par une syntaxe absolument non définie et donc différente pour des modèles et auteurs différents. Des ambiguités dues à un manque de normes et de formalisme sont donc toujours possibles.
+
+\subsection{Notations semi-formelles}
+
+Diverses normes et méthodes permettent la création d'une notations faciles à comprendre et à visualiser. L'acceptation des normes permettent la compréhension de la forme du modèle par divers partis en limitant les ambiguités (même si celle-ci peuvent être toujours possibles). Facile à prendre en main et pratiquement intuitives dues au caractère visuel.
+
+\subsection{Notations formelles}
+
+Un semblant de mathématique entre en jeu et s'exprime à travers une syntaxe très stricte et à une interprétation très évidente. Cette notation est pourtant difficile à lire, à comprendre et à apprendre.
+
+\subsection{Conclusion}
+
+Les langages de Système d'Informations peuvent être décris et caractérisés selon le critère formel ou informel de leur syntaxe et de leur sémantique. On peut évidemment décrire le langage naturel comme un langage non-formel tant du point de vue syntaxique que du point de vue sémantique alors que la notation formelle sera formelle sur tous les plans.
+
+\begin{itemize}
+  \item \textbf{Syntaxe} : Symbole et vocabulaire du langages
+  \item \textbf{Sémantique} : Signification du langage et des symboles
+\end{itemize}
+
+\section{Caractérisation d'un modèle}
+
+But wait? Quelles sont les bonnes caractéristiques d'un modèle de Système d'Information ?
+
+\subsection{Absraction}
+
+Le modèle se focalise sur certains aspects important du système et ignore simplement les autres. En rejetant ces éléments non-pertinents, il en ressort qu'un modèle est toujours une caricature du modèle réel.
+
+\subsection{Compréhension}
+
+Le but du modèle est bien de communiquer une idée complexe par un moyen plus évident et plus facile à cerner. La syntaxe et les symboles du modèle doivent donc être intuitifs.
+
+\subsection{Précision}
+
+Un modèle se doit d'être précis et cette précision ne peut se calculer en l'absence d'ambiguités.
+
+Un modèle doit :
+
+\begin{itemize}
+  \item Dire la vérité (rien de faux)
+  \item Dire toute la vérité (ne pas omettre de vérité)
+  \item Juste la vérité (ne pas rajouter de détails futils)
+\end{itemize}
+
+\subsection{Prédiction}
+
+Un modèle doit pouvoir servir de base pour prédire un comportement ou une caractéristique. Ces comportements et caractéristiques doivent pouvoir être deviner même si elles ne sont pas triviales. (C'est un peu le but du modèle mdr).
+
+\subsection{Bon marché}
+
+Le modèle doit être moins cher à développer que son équivalent réel. (C'est aussi le but du modèle.)
+
+\section{Apprendre d'un modèle}
+
+Lors de la construction du modèle, les questions qui seront posées vaudront aussi pour la construction du système réel.
+
+Après la construction du modèle, TODO TODO j'ai pas pigé lol xd ptdr mdr tralala
+
+Ensuite, il est possible de réaliser une analyse formelle pour vérifier la fiabilité théorique du système, son coût et d'entamer une vérification. Cette étape nécessite une formalisation du modèle (utiliser des langages formels).
+
+Vient l'étape de l'expérimentation où le système sera testé (à travers des simulations, des animations, ...).
+
+\section{Analyse fonctionnelle et économique}
+
+Dans le cadre du développement d'un produit au sein d'une entreprise, le Modelling s'inscrit dans les premières étapes de création. Le but de ce modèle est de définir le problème à résoudre et de proposer une conception abstraite de la solution. Cette solution sera par la suite implémentée pour devenir le système réel (cette partie du cycle de vie d'un produit n'est pas abordée dans ce cours). S'il n'est pas possible d'identifier et de communiquer précisément le problème que le Système d'Information est censé résoudre, il y a très peu de chance de le résoudre.
+
+TODO TODO est-il vraiment nécessaire de réexpliquer ce que tous les cours expliquent ? blah blah rater un projet coûte cher toussa toussa on a pas fait les specs etc etc
+
+\section{Point de vue d'une modélisation}
+
+Un Système d'Information peut-être conçue de différentes manières et ces manières dépendront des informations que l'on veut faire ressortir.
+
+\begin{itemize}
+  \item \textbf{Data-oriented} : Les données qui circulent.
+  \item \textbf{Function-oriented} : Les fonctions qui entrent en jeu.
+  \item \textbf{Dynamics-oriented} : Les comportements influençant le système.
+  \item \textbf{Object-oriented} : Fusion des modèles {Data/Function/Dynamics}-oriented.
+  \item \textbf{Agent-oriented} : Fusion des modèles {Data/Function/Dynamics}-oriented.
+  \item \textbf{Goal-oriented} : Buts et pourquoi du système.
+\end{itemize}
