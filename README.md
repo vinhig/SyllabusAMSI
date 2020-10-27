@@ -21,7 +21,6 @@ La méthode la plus simple est de créer une issue github. Tu y détailles l'err
 ### Je veux corriger une erreur
 
 C'est bien entendu la meilleure manière de contribuer.
-
 * Tu fork le repo.
 * Tu crées une branche `git checkout -b ajout-du-chapitre-2`
 * Tu y appliques tes modifications `git commit -am "Ajout du chapitre 2"`
