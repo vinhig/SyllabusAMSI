@@ -1,0 +1,21 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{unamur}[2020/05/11 Custom Package]
+
+% Packages import
+\RequirePackage{fancyhdr} % Allows margins handling
+\RequirePackage{titling} % Allows subtitle in \maketitle
+\RequirePackage[french]{babel}
+
+
+% Define margins
+\usepackage[a4paper,bindingoffset=0.2in,left=0.3in,right=0.3in,top=0.8in,bottom=0.7in,footskip=.25in]{geometry}
+
+% Define context details
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\large#1\end{center}
+    \vskip0.5em}%
+}
+
+\endinput
