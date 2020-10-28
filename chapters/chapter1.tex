@@ -1,6 +1,10 @@
-\chapter{Modelling}
+\documentclass[../Syllabus.tex]{subfiles}
 
-\section{Un modèle}
+\begin{document}
+
+\section{Chapitre 1 : Diagrammes de classe}
+
+\subsection{Un modèle}
 
 Un modèle est une représentation abstraite d'un système concret :
 
@@ -16,11 +20,11 @@ La modélisation d'un système est donc la mise en place d'une alternative à un
 
 En d'autre terme, simplier le système en n'en gardant que l'essence (ses caractéristiques pertinentes) afin de concevoir une abstraction du système sur laquelle il est plus aisée de travailler. On peut prendre l'exemple d'une carte. Si on prend la place d'un stratège, il est plus aisé de disposer ses troupes en réfléchissant sur la carte de la région plutôt que de se déplacer dans le monde réel. Cette carte devra aborder les caractéristiques \textit{pertinentes} de la région tel que les dénivelés et les axes de communication tout en omettant les essences d'arbres des bois environnents.
 
-\section{Un Système d'Information}
+\subsection{Un Système d'Information}
 
 Une simple définition (en anglais) suffit à cerner le concept : \textit{Information systems are combinations of hardware, sofware and telecommunications networks that people build and use to collect, create, and distribute useful data, typically in organization settings}.
 
-\section{Formalisme des modèles}
+\subsection{Formalisme des modèles}
 
 Les Systèmes d'Information peuvent donc se retrouver modélisés à des fins de recherche, de développement ou d'amélioration. Cette modélisation doit donc prendre forme afin de pouvoir être transmise et partagée entre les différents acteurs. Il y a différentes manières de les représenter et ses formes sont au nombre de quatre :
 
@@ -43,23 +47,23 @@ Ces différentes manières peuvent être jugées sur base de sept critères bien
   \item \textbf{Remords} : Apport d'information bien après l'énoncé d'un élément.
 \end{enumerate}
 
-\subsection{Langage naturel}
+\subsubsection{Langage naturel}
 
 Un moyen de mettre en forme un Système d'Information de manière relativement simple. Il suffit de le décrire en français. Si l'utilisateur utilise sa langue natale, il n'y a même plus besoin d'apprendre. Comme défini précédemment, c'est dans cette manière de formaliser les modèles que les 7 péchés sont le plus sollicités.
 
-\subsection{Notations spécifiques}
+\subsubsection{Notations spécifiques}
 
 Tout comme le langage naturel, il n'est pas nécessaire d'apprendre des normes ou des méthodes. Si un contexte veut être exprimé, il sera dessiné ou représenté d'une manière très intuitive et directement lié au contexte. Bien sûr, il est évident que le manque de formalisme se traduit par une syntaxe absolument non définie et donc différente pour des modèles et auteurs différents. Des ambiguités dues à un manque de normes et de formalisme sont donc toujours possibles.
 
-\subsection{Notations semi-formelles}
+\subsubsection{Notations semi-formelles}
 
 Diverses normes et méthodes permettent la création d'une notation facile à comprendre et à visualiser. L'acceptation des normes permettent la compréhension de la forme du modèle par divers partis en limitant les ambiguités (même si celle-ci peuvent être toujours possibles). Facile à prendre en main et pratiquement intuitives du au caractère visuel.
 
-\subsection{Notations formelles}
+\subsubsection{Notations formelles}
 
 Un semblant de mathématique entre en jeu et s'exprime à travers une syntaxe très stricte et à une interprétation très évidente. Cette notation est pourtant difficile à lire, à comprendre et à apprendre.
 
-\subsection{Conclusion}
+\subsubsection{Conclusion}
 
 Les langages de Système d'Informations peuvent être décris et caractérisés selon le critère formel ou informel de leur syntaxe et de leur sémantique. On peut évidemment décrire le Langage Naturel comme un langage non-formel tant du point de vue syntaxique que du point de vue sémantique alors que la Notation Formelle sera formelle sur tous les plans.
 
@@ -68,19 +72,19 @@ Les langages de Système d'Informations peuvent être décris et caractérisés 
   \item \textbf{Sémantique} : Signification du langage et des symboles
 \end{itemize}
 
-\section{Caractérisation d'un modèle}
+\subsection{Caractérisation d'un modèle}
 
 But wait? Quelles sont les bonnes caractéristiques d'un modèle de Système d'Information ?
 
-\subsection{Abstraction}
+\subsubsection{Abstraction}
 
 Le modèle se focalise sur certains aspects important du système et ignore simplement les autres. En rejetant ces éléments non-pertinents, il en ressort qu'un modèle est toujours une caricature du modèle réel.
 
-\subsection{Compréhension}
+\subsubsection{Compréhension}
 
 Le but du modèle est bien de communiquer une idée complexe par un moyen plus évident et plus facile à cerner. La syntaxe et les symboles du modèle doivent donc être intuitifs.
 
-\subsection{Précision}
+\subsubsection{Précision}
 
 Un modèle se doit d'être précis et cette précision ne peut se calculer en l'absence d'ambiguités.
 
@@ -92,15 +96,15 @@ Un modèle doit :
   \item Juste la vérité (ne pas rajouter de détails futils)
 \end{itemize}
 
-\subsection{Prédiction}
+\subsubsection{Prédiction}
 
 Un modèle doit pouvoir servir de base pour prédire un comportement ou une caractéristique. Ces comportements et caractéristiques doivent pouvoir être devinés même si ils ne sont pas triviales. (C'est un peu le but du modèle mdr).
 
-\subsection{Bon marché}
+\subsubsection{Bon marché}
 
 Le modèle doit être moins cher à développer que son équivalent réel. (C'est aussi le but du modèle.)
 
-\section{Apprendre d'un modèle}
+\subsection{Apprendre d'un modèle}
 
 Lors de la construction du modèle, les questions qui seront posées vaudront aussi pour la construction du système réel.
 
@@ -110,13 +114,13 @@ Ensuite, il est possible de réaliser une analyse formelle pour vérifier la fia
 
 Vient l'étape de l'expérimentation où le système sera testé (à travers des simulations, des animations, ...).
 
-\section{Analyse fonctionnelle et économique}
+\subsection{Analyse fonctionnelle et économique}
 
 Dans le cadre du développement d'un produit au sein d'une entreprise, le Modelling s'inscrit dans les premières étapes de création. Le but de ce modèle est de définir le problème à résoudre et de proposer une conception abstraite de la solution. Cette solution sera par la suite implémentée pour devenir le système réel (cette partie du cycle de vie d'un produit n'est pas abordée dans ce cours). S'il n'est pas possible d'identifier et de communiquer précisément le problème que le Système d'Information est censé résoudre, il y a très peu de chance de le résoudre.
 
 Le cours original détaille (comme bien d'autres cours) les différentes causes d'échecs de projet logiciel. Ces causes sont souvent dues à une mauvaise estimation des attentes et à une mauvaise identification du problème à effectivement résoudre.
 
-\section{Point de vue d'une modélisation}
+\subsection{Point de vue d'une modélisation}
 
 Un Système d'Information peut-être conçue de différentes manières et ces manières dépendront des informations que l'on veut faire ressortir.
 
@@ -128,3 +132,5 @@ Un Système d'Information peut-être conçue de différentes manières et ces ma
   \item \textbf{Agent-oriented} : Fusion des modèles {Data/Function/Dynamics}-oriented.
   \item \textbf{Goal-oriented} : Buts et pourquoi du système.
 \end{itemize}
+
+\end{document}

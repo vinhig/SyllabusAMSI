@@ -1,35 +1,58 @@
-% !TXS template
-\documentclass[french]{book}
-\usepackage[T1]{fontenc}
+\documentclass[a4paper]{article}
 \usepackage[utf8]{inputenc}
-\usepackage{lmodern}
-\usepackage[a4paper]{geometry}
-\usepackage{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx} % Allows picture insertion
+\usepackage{blindtext} % Allows Lorem Ipsum
+\usepackage{wrapfig} % Allows pictures wrapping in paragraphs
+\usepackage{calc}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{unamur}
+\usepackage{subfiles}
 
-%opening
-\title{Analyse et Modélisation des système d'information}
-\author{Vincent Higginson}
 
+% Main Doc
 \begin{document}
 
-\maketitle
+% Defines author
+\newcommand{\name}{
+    HGGINSON Vincent \\
+    DELZOTTI Clément % Author Name
+}
+\title{Syllabus d'Analyse et Modélisation de SI}
+\subtitle{Décryptage des slides}
+\author{\name}
+\date{\today}
 
-\frontmatter
+% Define headers
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ \fancyplain{}{\name} }
+\rhead{ \fancyplain{}{\today} }
+\lfoot{ \fancyplain{}{Bloc3-Informatique} }
+\rfoot{ \fancyplain{}{\thepage} }
+
+% First page
 \maketitle
+\vspace{7em} %Set space between title and logo
+\begin{center}
+    % Import logo
+    \includegraphics[scale=0.5]{img/comic.jpg}
+\end{center}
+\newpage
+
+% ===========================================
+% ===========================================
+%          BEGINING OF THE DOCUMENT
+% ===========================================
+% ===========================================
+
+% Table of content, uncomment to show a table of content
 \tableofcontents
+\newpage
 
-\mainmatter
+\subfile{chapters/chapter1.tex}
 
-\include{./chapters/chapter1}
-
-\include{./chapters/chapter2}
-
-\chapter{OCL}
-
-\chapter{State Diagram}
-
-\chapter{Meta Modelling}
-
-\backmatter
+\subfile{chapters/chapter2.tex}
 
 \end{document}
