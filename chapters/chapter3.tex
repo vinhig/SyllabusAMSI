@@ -6,7 +6,7 @@
 
 \subsection{Motivation}
 
-L'intérêt d'utiliser \textit{OCL} en complément des diagrammes de classes UML est de pouvoir répondre à des ambigüités auxquelles le diagramme de classe ne répond pas. Il permet, entre autres, d'exprimer les conditions nécessaires pour que le modèle soit cohérent \textit{(En d'autres mots, des invariants)}, d'accéder à certains éléments du schéma ou encore d'établir des Pré/Post conditions.
+L'intérêt d'utiliser \textit{OCL} en complément des diagrammes de classes UML est de pouvoir répondre à des ambigüités auxquelles le diagramme de classe ne répond pas. Il permet, entre autre, d'exprimer les conditions nécessaires pour que le modèle soit cohérent \textit{(En d'autres mots, des invariants)}, d'accéder à certains éléments du schéma ou encore d'établir des Pré/Post conditions.
 
 \subsection{Les bases}
 
@@ -34,7 +34,7 @@ L'intérêt d'utiliser \textit{OCL} en complément des diagrammes de classes UML
 
 \begin{warningblock}
 	\begin{itemize}
-		\item \textbf{Les clauses \textit{else} sont obligatoires} : Tout \textit{if} doit nécessairement comporter un \textit{else}. Toutes expressions OCL doit retourner une valeur.
+		\item \textbf{Les clauses \textit{else} sont obligatoires} : Tout \textit{if} doit nécessairement comporter un \textit{else}. Toutes les expressions OCL doivent retourner une valeur.
 		\item \textbf{Pas d'opérateurs paresseux} : Toutes les expressions sont évaluées en entier. Même si un premier morceau de l'expression permet de déjà connaître la valeur de l'expression, le reste est \textbf{quand-même} évalué.
 	\end{itemize}
 \end{warningblock}
@@ -89,7 +89,7 @@ On retrouvera, entre autre, les types suivants
 
 \subsection{Le contexte}
 
-Une expression OCL possède un contexte qui permet d'identifier l'élément auquel s'applique une contrainte et de limiter l'impacte d'une expression. On utilisera le mot clé \textbf{self} pour référencer l'instance courante. Mais de façon générale, on ne le met pas lorsque le contexte est unique.
+Une expression OCL possède un contexte qui permet d'identifier l'élément auquel s'applique une contrainte et de limiter l'impact d'une expression. On utilisera le mot clé \textbf{self} pour référencer l'instance courante. Mais de façon générale, on ne le met pas lorsque le contexte est unique.
 
 \vspace{0.5cm}
 
@@ -275,7 +275,7 @@ Il y a quelques méthodes mise à disposition par les objets OCL qui peuvent s'a
   \end{itemize}
   \item \textbf{allInstances()}
   \begin{itemize}
-    \item Définit sur les classes, les énumérations et les interfaces, retourne toutes les instances d'un type donné.
+    \item Défini sur les classes, les énumérations et les interfaces, retourne toutes les instances d'un type donné.
   \end{itemize}
 \end{itemize}
 
